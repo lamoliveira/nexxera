@@ -1644,6 +1644,166 @@
         }
     </script>
     <meta id="dcngeagmmhegagicpcmpinaoklddcgon">
+
+
+
+
+        
+    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.9.1.min.js"></script>
+
+<script type="text/javascript">
+
+    window.addEventListener("load", mediaSizer);
+    //window.addEventListener("resize", mediaSizer);
+    // Listeners that will react when the page first loads or is resized.
+    // If any of these events take place the mediaSizer() function executes.
+
+    var vizList = [
+
+        "https://public.tableau.com/views/resultadonexxera/AcompanhamentodeResultado?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+        "https://public.tableau.com/views/RHDespesasdefuncionariosnexxera/Cockpit?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+        "https://us-east-1.online.tableau.com/t/luizoliveira/views/PrevistoxRealizado_16860047788610/AnliseMensal/9ab8389e-71ff-489b-8399-d0fc4acf0e10/6f8e7cb9-b8b9-4149-a324-da8ae8e6fa6e",
+        "https://public.tableau.com/views/FinanasCorporativas-PainelDemonstrativoFinanceiromaxion/Cockpit-Finance?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+
+        "https://public.tableau.com/views/ExecutiveDashboardgringo/ExecutiveDashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+        "https://demo.tableau.com/t/LuizOliveira/views/2-Template_16836500933620/Template",
+        "https://public.tableau.com/views/3-Exemplogringo/DashExemplo?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+
+        "https://public.tableau.com/views/Howhastheworldchangedsince1962/WorldIndicators?:language=en-US&:display_count=n&:origin=viz_share_link",
+
+        "https://public.tableau.com/views/TheTableauChartCatalog/TableauChartExamples",
+
+        "https://public.tableau.com/views/ProcurementDashboard_6/Home?:apiInternalVersion=1.131.0&:disableUrlActionsPopups=n&navSrc=Opt&:embed=y&navType=0&:suppressDefaultEditBehavior=n&mobile=n&:toolbar=n&:hideEditButton=y&:hideEditInDesktopButton=n&:jsdebug=n&:apiExternalVersion=3.6.0&:display_count=n&:origin=viz_share_link",
+        "https://public.tableau.com/views/ProcurementDashboard_6/Home?:apiInternalVersion=1.131.0&:disableUrlActionsPopups=n&navSrc=Opt&:embed=y&navType=0&:suppressDefaultEditBehavior=n&mobile=n&:toolbar=n&:hideEditButton=y&:hideEditInDesktopButton=n&:jsdebug=n&:apiExternalVersion=3.6.0&:display_count=n&:origin=viz_share_link",
+        "https://public.tableau.com/views/FacebookAdsDashboard_15566377846980/ExecutiveSummary?:language=en-US&:toolbar=n&:display_count=n&:origin=viz_share_link",
+        "https://public.tableau.com/views/NPS-NetPromoterScoreDashboard/ExecutiveSummary?:language=en-US&:display_count=n&:origin=viz_share_link",
+        "https://public.tableau.com/views/StockCoverageABC-XYZDashboard/Home?:apiInternalVersion=1.131.0&:disableUrlActionsPopups=n&navSrc=Opt&:embed=y&navType=0&:suppressDefaultEditBehavior=n&mobile=n&:toolbar=n&:hideEditButton=y&:hideEditInDesktopButton=n&:jsdebug=n&:apiExternalVersion=3.6.0&:display_count=n&:origin=viz_share_link",
+        "https://public.tableau.com/views/SUPPLYCHAIN-SupplyIntelligence/Home?:apiInternalVersion=1.131.0&:disableUrlActionsPopups=n&navSrc=Opt&:embed=y&navType=0&:suppressDefaultEditBehavior=n&mobile=n&:toolbar=n&:hideEditButton=y&:hideEditInDesktopButton=n&:jsdebug=n&:apiExternalVersion=3.6.0&:display_count=n&:origin=viz_share_link",
+        
+        "https://public.tableau.com/views/1-DesigningEffectiveDashboardsPublic/Intro?:language=en-US&:display_count=n&:origin=viz_share_link",
+        "https://public.tableau.com/views/Embedded_Analytics/Introduo?:language=en-US&:display_count=n&:origin=viz_share_link"
+
+
+
+    ];
+    // Array of Tableau Server URLs for dashboard or sheet navigation.
+
+    var viz,
+        vizLen = vizList.length,
+        vizCount = 0,
+        devType,
+        vHideTabs = true,
+        vHideToolbar = true;
+    var options = {
+        device: devType,
+    };
+
+
+    function mediaSizer() {
+        // Determines the correct viz layout according to screen sizes.
+        if (window.matchMedia("(max-width: 480px)").matches) {
+            //alert("I am a phone layout!");
+            devType = 'phone';
+            vWidth = 450;
+            vHeight = 2000;
+            //options.device = 'phone';
+        } else if (window.matchMedia("(max-width: 980px)").matches) {
+            //alert("I am a tablet layout!");
+            devType = 'tablet';
+            vWidth = 980;
+            //options.device = 'tablet';
+        } else {
+            //alert("I am a desktop layout!");
+            devType = 'desktop';
+            vWidth = 1666;
+            vHeight = 1000;
+            //options.device = 'desktop';
+        }
+        console.log("devtype: " + devType)
+        console.log("launch0")
+        vHeight = 900;
+        launchViz(0);
+        console.log("launch1")
+        launchViz(1);
+
+        console.log("launch2")
+        vHeight = 1100;
+        //launchViz(2);
+        console.log("launch3")
+        //launchViz(3);
+        vHeight = 1800;
+        //launchViz(4);
+        vHeight = 1100;
+        vHideToolbar = true;
+        vHideTabs = true;
+        //launchViz(5);
+       // launchViz(6);
+        vHeight = 1300;
+        launchViz(7);
+        vHeight = 8000;
+
+        //launchViz(8);
+        vHeight = 1300;
+
+        vHideToolbar = false;
+        vHideTabs = false;
+        //launchViz(9);
+        vHeight = 1000;
+        launchViz(10);
+        vHeight = 1000;
+        launchViz(11);
+        launchViz(12);
+       // launchViz(13);
+       // launchViz(14);
+        launchViz(15);
+        launchViz(16);
+
+        // Launches the viz again with the new sizing at the current index of vizList.
+    }
+
+
+    function launchViz(vizNav) {
+        // JS object targeting a div in the html document. (vizNav) will pass navigation values to move back and forth across vizList.
+        console.log("vizContainer" + vizNav)
+        console.log("devtype: " + devType)
+        var vizDiv = document.getElementById("vizContainer" + vizNav),
+            // Will embed the visualization on a div with id="VizContainer"
+            options = {
+                device: devType,
+                width: vWidth,
+                height: vHeight,
+                hideTabs: vHideTabs,
+                hideToolbar: vHideToolbar,
+                onFirstInteractive: function () {
+                    listenToMarksSelection();
+                }
+            };
+
+
+        var vizURL = vizList[vizNav];
+        // Dynamic URL returning the string from vizList at index = vizNav (viz to be displayed).
+
+        try {
+            // Initializes the viz from the array with desired options. 
+            viz = new tableau.Viz(vizDiv, vizURL, options);
+            if (!viz) throw 'viz not initialized'
+        }
+        catch (err) {
+            alert(err);
+        }
+        finally {
+            console.log('whatever')
+            console.count('initViz')
+        }
+
+    }
+
+</script>
+
+
+
+
+
 </head>
 
 <body dir="ltr" itemscope="" itemtype="http://schema.org/WebPage" id="yDmH0d" css="yDmH0d"
@@ -2364,6 +2524,174 @@
                                     </div>
                                 </div>
                             </section>
+
+                            
+
+
+        <div style="text-align: center;">
+            <div style="display: inline-block;">
+                <p> - </p>
+                <p> Deste ponto para baixo deste microsite, apresentaremos vários dashboards somente como inspiração sobre as possibilidades que você terá a sua disposição com o Tableau.</p>
+                    <p> Caso esteja visualizando no celular, talvez alguns não tenham sido criados para este tipo de visualização. </p>
+                    <p> Realizamos uma cópia do código fonte de seu website para abstrair o uso do Tableau Embedded e você pode interagir com os dashboards, mas as demais funções do site não foram replicadas. </p>    
+                <p> - </p>
+                <p> Exemplo visual de acompanhamento de resultados utilizando o look and feel da sua empresa. </p>
+                <p> - </p>
+                <div id="vizContainer0"></div>
+            </div>
+          </div>
+          
+          <div style="text-align: center;">
+            <div style="display: inline-block;">
+                <p> - </p>
+                <p> Exemplo de acompanhamento de despesas para RH. Feito com base nos Accelerators Tableau. Customizado para sua empresa </p>
+                <p> - </p>
+                <div id="vizContainer1"></div>
+            </div>
+          </div>
+          <!-- <div style="text-align: center;">
+            <div style="display: inline-block;">
+                <p> - </p>
+                <p> Exemplo de acompanhamentos de custo de projetos comparando previsto e realizado. Conceito de guided analytics. Clique nas barras para navegar. Customizado para sua empresa </p>
+                <p> - </p>
+                <div id="vizContainer2"></div>
+            </div>
+          </div> -->
+       <!--     <div style="text-align: center;">
+            <div style="display: inline-block;">
+                <p> - </p>
+                <p> Exemplo de demonstrativo financeiro feito com base nos Accelerators Tableau. Customizado para sua empresa </p>
+                <p> - </p>
+                <div id="vizContainer3"></div>
+            </div>
+          </div>  --> 
+          <!--          <div style="text-align: center;">
+            <div style="display: inline-block;">
+                <p> - </p>
+                <p> Exemplo de dashboard executivo com indicadores.  </p>
+                <p> - </p>
+                <div id="vizContainer4"></div>
+            </div>
+          </div> --> 
+          
+          <!--  <div style="text-align: center;">
+            <div style="display: inline-block;">
+                <p> - </p>
+                <p> Exemplo do uso do template. Customizado para sua empresa </p>
+                <p> - </p>
+                <div id="vizContainer6"></div>
+            </div>
+          </div>--> 
+          <div style="text-align: center;">
+            <div style="display: inline-block;">
+                <p> - </p>
+                <p> Exemplo de dashboard com animação. Clique no botao de play na forma de um triangulo no canto inferior direito para ver a animação. Disponível no Tableau Public </p>
+                <p> - </p>
+                <div id="vizContainer7"></div>
+            </div>
+          </div>
+          <!-- <div style="text-align: center;">
+            <div style="display: inline-block;">
+                <p> - </p>
+                <p> Somente alguns exemplos de gráficos possíveis no Tableau para inspiração da comunidade. Disponível no Tableau Public. Temos milhares de outros conteúdos como esse disponibilizados pela comunidade. </p>
+                <p> - </p>
+                <div id="vizContainer8"></div>
+            </div>
+          </div> -->
+          
+     <!--      <div style="text-align: center;">
+            <div style="display: inline-block;">
+                <p>-</p>
+                <p>-</p>
+                <div id="vizContainer9"></div>
+            </div>
+        </div> -->
+        <div style="text-align: center;">
+            <div style="display: inline-block;">
+                <p> Com esse acelerador Tableau você pode:</p>
+                <p>-Ativar e monitorar seus gastos sob gerenciamento</p>
+                <p>-Maximizar a economia de custos (redução de custos e prevenção de custos)</p>
+                <p>-Identificar os contratos que apresentam o maior nível de risco</p>
+                <p>-Identificar o desempenho de seus compradores e identifique oportunidades de desenvolvimento</p>
+                <p>-Planejar melhor a alocação de recursos com base nos contratos a serem renovados nos próximos meses</p>
+                <p>-Avaliar sua alocação de gastos por fornecedor</p>
+                <p>-</p>
+                <div id="vizContainer10"></div>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <div style="display: inline-block;">
+    
+                <p> - </p>
+                <p> Abaixo um dashboard para ánalise de facebook ads. Também disponível nos Accelerators Tableau</p>
+                <p>Avalie e melhore o desempenho de suas campanhas de marketing com o Facebook Ads.
+                    Identifique as campanhas mais impactantes.
+                    Mergulhe fundo na eficiência da campanha em: Reconhecimento, Engajamento, Conversão.</p>
+                <p>Melhorar o retorno sobre o investimento.
+                    Audite os resultados da otimização da campanha ao longo do tempo.</p>
+                <div id="vizContainer11"></div>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <div style="display: inline-block;">
+                <p> - </p>
+                <p> Abaixo um dashboard para acompanhamento de NPS. Também disponível nos Accelerators Tableau</p>
+                <p>Entenda como os clientes avaliam suas experiências com sua empresa</p>
+                <p>Como a qualidade da experiência de seus clientes evoluiu ao longo do tempo</p>
+                <div id="vizContainer12"></div>
+            </div>
+        </div>
+        <!-- <div style="text-align: center;">
+            <div style="display: inline-block;">
+                <p>-</p>
+                <p> Com esse acelerador Tableau você pode:</p>
+                <p>-otimizar a cobertura de estoque dos itens que você mantém em seu estoque (com base nas recomendações sugeridas por uma análise ABC-XYZ).</p>
+                <p>-A análise ABC-XYZ classifica seus produtos e recomenda como lidar com: Grau de automação dos processos de reabastecimento, Estoque Regulador, Controle de inventário </p>
+                <p>-Volume de consumo: A: Alto volume de consumo, B: Volume médio de consumo, C: Baixo volume de consumo</p>
+                <p>-Volatilidade do volume de consumo: se o consumo passado for estável (= não volátil), podemos fazer uma estimativa confiável da demanda futura
+                    X: Consumo estável / Demanda linear
+                    Y: Consumo volátil / Demanda variável
+                    Z: Consumo muito volátil / Demanda imprevisível </p>
+                    <p>-</p>
+                <div id="vizContainer13"></div>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <div style="display: inline-block;">
+                <p> Supply intelligence accelerator é um aplicativo analítico plug&play, desenvolvido por especialistas, que o ajudará a melhorar a eficiência de sua Cadeia de Suprimentos</p>
+                <p>-A eficiência da sua Cadeia de Suprimentos é avaliada de duas perspectivas diferentes: Perspectiva de Vendas e de resiliencia</p>
+                <p>A Resiliência da sua Cadeia de Suprimentos é analisada em 5 pilares: </p>
+                <p>- Confiabilidade de Fornecimento x Demanda - Como podemos atender a demanda dos clientes?</p>
+                <p>- Impacto da inflação - Como somos afetados pela inflação?</p>
+                <p>- Confiabilidade Logística - Somos capazes de entregar nossos clientes no prazo / integralmente?</p>
+                <p>- Confiabilidade de qualidade - Enfrentamos muitas devoluções por causa de produtos defeituosos?</p>
+                <p>- Disponibilidade de estoque - temos estoque suficiente para atender à demanda futura?</p>
+                <p>-</p>
+                <div id="vizContainer14"></div>
+            </div>
+        </div> -->
+
+
+
+        <div style="text-align: center;">
+            <div style="display: inline-block;">
+                <p> - </p>
+                <p> Exemplo de dashboard para webinar sobre criação de dashboards mais efetivos </p>
+                <p> - </p>
+                <div id="vizContainer15"></div>
+            </div>
+          </div>
+          <div style="text-align: center;">
+            <div style="display: inline-block;">
+                <p> - </p>
+                <p> Exemplo de dashboard para Webinar sobre Embedded Analytics </p>
+                <p> - </p>
+                <div id="vizContainer16"></div>
+            </div>
+          </div>
+
+
+
                             <section id="h.7ce53977888b9d82_29" class="yaqOZd" style="">
                                 <div class="IFuOkc"></div>
                                 <div class="mYVXT">
